@@ -1,0 +1,234 @@
+.Page1 {
+  width: 100vw;
+  height: 100vh;
+  background: transparent no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.left{
+    position: relative;
+}
+
+.right{
+    position: relative;
+}
+
+.lineLeft {
+  height: 30%;
+  width: 5px;
+  color: #e69a7a;
+  writing-mode: vertical-lr;
+  position: relative;
+  left: -30px; 
+  cursor: pointer;
+}
+
+.lineLeft::after{
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 0;
+  width: 3px;
+  left: -5px;
+  top: 0px;
+  transition: 0.3s;
+}
+
+.lineLeft:hover::after{
+  height: 100px;
+}
+
+.lineRight {
+  height: 30%;
+  width: 2px;
+  color: #e69a7a;
+  writing-mode: vertical-lr;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.lineRight::after{
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 0;
+  width: 3px;
+  left: -5px;
+  top: 0px;
+  transition: 0.3s;
+}
+
+.lineRight:hover::after{
+  height: 100px;
+}
+
+.Info {
+  margin: 0 0 0 30px;
+  font-size: 30px;
+  height: 60%;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.infoSon{
+    overflow: hidden;
+}
+
+.infoSon>span{
+    display: inline-block;
+    transform: translateY(100%);
+}
+
+.name {
+  font-size: 70px;
+  font-family: sans-serif, cursive;
+  margin-left: 30px;
+  display: block;
+}
+
+.wrapper {
+  display: inline-flex;
+  margin: 20px 0;
+}
+
+.dynamic-text{
+    overflow: hidden;
+}
+
+.dynamic-text > li > span {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.dynamic-text > li > .one::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  border-left: 2px solid #e69a7a;
+  animation: typing1 2s steps(25) 3s forwards;
+}
+
+.dynamic-text > li > .two::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  border-left: 2px solid #e69a7a;
+  animation: typing2 2s steps(25) 5s forwards;
+}
+
+.dynamic-text > li > .three::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  border-left: 2px solid #e69a7a;
+  animation: typing3 2s steps(25) 7s forwards;
+}
+
+@keyframes typing1 {
+  0% {
+    margin: 0 -35px 0 35px;
+  }
+  99% {
+    border-left: 2px solid #e69a7a;
+  }
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+    display: none;
+    border-left: none;
+  }
+}
+
+@keyframes typing2 {
+    0% {
+      margin: 0 -35px 0 35px;
+    }
+    99% {
+        border-left: 2px solid #e69a7a;
+      }
+    100% {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+      display: none;
+      border-left: none;
+    }
+  }
+
+  @keyframes typing3 {
+    0% {
+      margin: 0 -35px 0 35px;
+    }
+    100% {
+      left: 70%;
+      margin: 0 -35px 0 35px;
+      display: none;
+      border-left: none;
+    }
+  }
+
+.litem {
+  color: #e69a7a;
+  display: block;
+}
+
+.container {
+  width: 75%;
+  height: 60%;
+  background-color: #074f49;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  position: relative;
+}
+
+img {
+  overflow: hidden;
+  width: 100%;
+}
+
+.contact{
+    margin-left: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 15%;
+    color: white;
+    position: relative;
+    background-color: black;
+    transition: .01s;
+    cursor: pointer;
+}
+
+.contact:hover {
+  transform: scale(1.1);
+}
+
+button{
+    color: white;
+    font-size: 30px;
+    position: relative;
+}
+

@@ -1,0 +1,85 @@
+header{
+    background: black;
+    color: #F2AA4CFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    height: 100px;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.hd{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+svg>circle{
+    stroke-width: 3px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    color: white;
+    font-size: 50px;
+    margin-left: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
+.line{
+    width: 30%;
+    height: 2px;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+}
+
+
+nav>a{
+    text-decoration: none;
+    color: #e69a7a;
+    margin: 30px;
+    position: relative;
+    padding: 0 10px;
+}
+
+nav>a::after{
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+nav>a:hover{
+    color:#a0a0a0;
+}
+
+nav>a:hover::after{
+    width: 100%;
+}
+
+.c1{
+    z-index: 1;
+}
+
+.c2{
+    z-index: 2;
+}
