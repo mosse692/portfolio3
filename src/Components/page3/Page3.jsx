@@ -23,7 +23,7 @@ function Page3() {
       <br/>
       <div className="discover__container" data-aos="fade-left">
           {/* <!-- discover 1 --> */}
-          <a href="https://github.com/mosse692/Cbank.git">
+          <a href="https://cbank1.vercel.app/">
           <div className="discover__card">
             <img src={cb1} alt="" className="discover__img"/>
               <div className="discover__data">
